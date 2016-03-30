@@ -8,6 +8,6 @@ main()
   for(a=0;a<10;a++)
   {
     printf("%d",b);
-    
+    printf("%d",a);
   }
 }
