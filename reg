@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+//解锁注册表
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableRegistryTools"=dword:00000000
+//锁上注册表
+"DisableRegistryTools"=dword:1
+
+---------------------------------------------------------------------------------------
+
+//清空学生端密码
+[HKEY_LOCAL_MACHINE\SOFTWARE\TopDomain\e-Learning Class Standard\1.00]
+"UninstallPasswd"=""
+
+---------------------------------------------------------------------------------------
+
+//右击计算机添加选项
+[HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\hyz]
+@="计算器"
+"SuppressionPolicy"=dword:4000003c
+
+[HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\hyz\command]
+@="E:\\_05\\00\\e.bat"
