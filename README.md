@@ -10,7 +10,7 @@
 document.getElementById("demo").innerHTML="My First JavaScript";
 </script>
 
-<input type=text'>a</input>
+<input type=submit'>a</input>
 
 </body>
 </html>
